@@ -21,12 +21,12 @@ import (
 	"testing"
 	"time"
 
-	"a-projects/geekbang/framework/gin/binding"
+	"github.com/JiadeXu/jade/framework/gin/binding"
 	"github.com/gin-contrib/sse"
 	"github.com/golang/protobuf/proto"
 	"github.com/stretchr/testify/assert"
 
-	testdata "a-projects/geekbang/framework/gin/testdata/protoexample"
+	testdata "github.com/JiadeXu/jade/framework/gin/testdata/protoexample"
 )
 
 var _ context.Context = &Context{}
@@ -353,7 +353,7 @@ func TestContextHandlerName(t *testing.T) {
 	c, _ := CreateTestContext(httptest.NewRecorder())
 	c.handlers = HandlersChain{func(c *Context) {}, handlerNameTest}
 
-	assert.Regexp(t, "^(.*/vendor/)?a-projects/geekbang/framework/gin.handlerNameTest$", c.HandlerName())
+	assert.Regexp(t, "^(.*/vendor/)?github.com/JiadeXu/jade/framework/gin.handlerNameTest$", c.HandlerName())
 }
 
 func TestContextHandlerNames(t *testing.T) {

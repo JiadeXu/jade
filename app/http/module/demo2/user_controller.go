@@ -1,7 +1,7 @@
 package demo2
 
 import (
-	"a-projects/geekbang/framework/gin"
+	"github.com/JiadeXu/jade/framework/gin"
 	"time"
 )
 

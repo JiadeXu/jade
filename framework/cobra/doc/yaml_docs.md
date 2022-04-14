@@ -8,8 +8,8 @@ package main
 import (
 	"log"
 
-	"a-projects/geekbang/framework/cobra"
-	"a-projects/geekbang/framework/cobra/doc"
+	"github.com/JiadeXu/jade/framework/cobra"
+	"github.com/JiadeXu/jade/framework/cobra/doc"
 )
 
 func main() {
@@ -41,7 +41,7 @@ import (
 	"k8s.io/kubernetes/pkg/kubectl/cmd"
 	cmdutil "k8s.io/kubernetes/pkg/kubectl/cmd/util"
 
-	"a-projects/geekbang/framework/cobra/doc"
+	"github.com/JiadeXu/jade/framework/cobra/doc"
 )
 
 func main() {

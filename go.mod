@@ -1,4 +1,4 @@
-module a-projects/geekbang
+module github.com/JiadeXu/jade
 
 go 1.16
 

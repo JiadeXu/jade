@@ -1,8 +1,8 @@
 package demo2
 
 import (
-	"a-projects/geekbang/framework/gin"
-	demo2 "a-projects/geekbang/provider/demo"
+	"github.com/JiadeXu/jade/framework/gin"
+	demo2 "github.com/JiadeXu/jade/provider/demo"
 	"fmt"
 )
 

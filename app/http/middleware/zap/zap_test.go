@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"a-projects/geekbang/framework/gin"
+	"github.com/JiadeXu/jade/framework/gin"
 
 	"go.uber.org/zap"
 	"go.uber.org/zap/zaptest/observer"

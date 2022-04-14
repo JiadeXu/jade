@@ -1,9 +1,9 @@
 package services
 
 import (
-	"a-projects/geekbang/framework"
-	"a-projects/geekbang/framework/contract"
-	"a-projects/geekbang/framework/provider/log/formatter"
+	"github.com/JiadeXu/jade/framework"
+	"github.com/JiadeXu/jade/framework/contract"
+	"github.com/JiadeXu/jade/framework/provider/log/formatter"
 	"context"
 	"io"
 	"time"

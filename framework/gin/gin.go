@@ -5,7 +5,7 @@
 package gin
 
 import (
-	"a-projects/geekbang/framework"
+	"github.com/JiadeXu/jade/framework"
 	"fmt"
 	"html/template"
 	"net"
@@ -15,8 +15,8 @@ import (
 	"strings"
 	"sync"
 
-	"a-projects/geekbang/framework/gin/internal/bytesconv"
-	"a-projects/geekbang/framework/gin/render"
+	"github.com/JiadeXu/jade/framework/gin/internal/bytesconv"
+	"github.com/JiadeXu/jade/framework/gin/render"
 )
 
 const defaultMultipartMemory = 32 << 20 // 32 MB

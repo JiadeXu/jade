@@ -14,7 +14,7 @@
 package main
 
 import (
-	"a-projects/geekbang/framework/gin"
+	"github.com/JiadeXu/jade/framework/gin"
 )
 
 func main() {

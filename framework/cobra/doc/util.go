@@ -16,7 +16,7 @@ package doc
 import (
 	"strings"
 
-	"a-projects/geekbang/framework/cobra"
+	"github.com/JiadeXu/jade/framework/cobra"
 )
 
 // Test to see if we have a reason to print See Also information in docs

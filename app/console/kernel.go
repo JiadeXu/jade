@@ -1,10 +1,10 @@
 package console
 
 import (
-	"a-projects/geekbang/app/console/command/demo"
-	"a-projects/geekbang/framework"
-	"a-projects/geekbang/framework/cobra"
-	"a-projects/geekbang/framework/command"
+	"github.com/JiadeXu/jade/app/console/command/demo"
+	"github.com/JiadeXu/jade/framework"
+	"github.com/JiadeXu/jade/framework/cobra"
+	"github.com/JiadeXu/jade/framework/command"
 	"time"
 )
 

@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"a-projects/geekbang/framework/cobra"
-	"a-projects/geekbang/framework/cobra/doc"
+	"github.com/JiadeXu/jade/framework/cobra"
+	"github.com/JiadeXu/jade/framework/cobra/doc"
 )
 
 func ExampleGenManTree() {

@@ -19,7 +19,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"a-projects/geekbang/framework/cobra"
+	"github.com/JiadeXu/jade/framework/cobra"
 )
 
 var srcPaths []string

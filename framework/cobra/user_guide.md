@@ -76,7 +76,7 @@ import (
 	"fmt"
 	"os"
 
-	"a-projects/geekbang/framework/cobra"
+	"github.com/JiadeXu/jade/framework/cobra"
 	"github.com/spf13/viper"
 )
 
@@ -171,7 +171,7 @@ package cmd
 import (
   "fmt"
 
-  "a-projects/geekbang/framework/cobra"
+  "github.com/JiadeXu/jade/framework/cobra"
 )
 
 func init() {
@@ -198,7 +198,7 @@ package cmd
 import (
   "fmt"
 
-  "a-projects/geekbang/framework/cobra"
+  "github.com/JiadeXu/jade/framework/cobra"
 )
 
 func init() {
@@ -354,7 +354,7 @@ import (
   "fmt"
   "strings"
 
-  "a-projects/geekbang/framework/cobra"
+  "github.com/JiadeXu/jade/framework/cobra"
 )
 
 func main() {
@@ -521,7 +521,7 @@ package main
 import (
   "fmt"
 
-  "a-projects/geekbang/framework/cobra"
+  "github.com/JiadeXu/jade/framework/cobra"
 )
 
 func main() {

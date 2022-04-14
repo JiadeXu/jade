@@ -1,9 +1,9 @@
 package trace
 
 import (
-	"a-projects/geekbang/framework"
-	"a-projects/geekbang/framework/contract"
-	"a-projects/geekbang/framework/gin"
+	"github.com/JiadeXu/jade/framework"
+	"github.com/JiadeXu/jade/framework/contract"
+	"github.com/JiadeXu/jade/framework/gin"
 	"context"
 	"net/http"
 	"time"

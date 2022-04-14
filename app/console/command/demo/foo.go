@@ -1,7 +1,7 @@
 package demo
 
 import (
-	"a-projects/geekbang/framework/cobra"
+	"github.com/JiadeXu/jade/framework/cobra"
 	"log"
 )
 

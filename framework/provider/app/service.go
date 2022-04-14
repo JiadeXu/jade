@@ -1,9 +1,9 @@
 package app
 
 import (
-	"a-projects/geekbang/framework"
-	"a-projects/geekbang/framework/contract"
-	"a-projects/geekbang/framework/util"
+	"github.com/JiadeXu/jade/framework"
+	"github.com/JiadeXu/jade/framework/contract"
+	"github.com/JiadeXu/jade/framework/util"
 	"errors"
 	"flag"
 	"github.com/google/uuid"

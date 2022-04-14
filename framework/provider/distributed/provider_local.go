@@ -1,8 +1,8 @@
 package distributed
 
 import (
-	"a-projects/geekbang/framework"
-	"a-projects/geekbang/framework/contract"
+	"github.com/JiadeXu/jade/framework"
+	"github.com/JiadeXu/jade/framework/contract"
 )
 
 type LocalDistributedProvider struct {

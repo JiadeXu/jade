@@ -1,7 +1,7 @@
 package kernel
 
 import (
-	"a-projects/geekbang/framework/gin"
+	"github.com/JiadeXu/jade/framework/gin"
 	"net/http"
 )
 

@@ -1,7 +1,7 @@
 package old
 
 import (
-	"a-projects/geekbang/framework/cast"
+	"github.com/JiadeXu/jade/framework/cast"
 	"bytes"
 	"encoding/json"
 	"encoding/xml"

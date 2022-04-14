@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"a-projects/geekbang/framework/cobra"
+	"github.com/JiadeXu/jade/framework/cobra"
 )
 
 func assertNoErr(t *testing.T, e error) {

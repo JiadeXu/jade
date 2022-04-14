@@ -1,8 +1,8 @@
 package demo2
 
 import (
-	"a-projects/geekbang/framework/gin"
-	"a-projects/geekbang/framework/middleware"
+	"github.com/JiadeXu/jade/framework/gin"
+	"github.com/JiadeXu/jade/framework/middleware"
 )
 
 func registerRouter(core *gin.Engine) {

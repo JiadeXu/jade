@@ -8,7 +8,7 @@ import (
 	"errors"
 	"testing"
 
-	"a-projects/geekbang/framework/gin/internal/json"
+	"github.com/JiadeXu/jade/framework/gin/internal/json"
 	"github.com/stretchr/testify/assert"
 )
 

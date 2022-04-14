@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"a-projects/geekbang/framework/gin/internal/bytesconv"
+	"github.com/JiadeXu/jade/framework/gin/internal/bytesconv"
 )
 
 // String contains the given interface object slice and its format.

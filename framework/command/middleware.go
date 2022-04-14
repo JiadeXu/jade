@@ -1,9 +1,9 @@
 package command
 
 import (
-	"a-projects/geekbang/framework/cobra"
-	"a-projects/geekbang/framework/contract"
-	"a-projects/geekbang/framework/util"
+	"github.com/JiadeXu/jade/framework/cobra"
+	"github.com/JiadeXu/jade/framework/contract"
+	"github.com/JiadeXu/jade/framework/util"
 	"bytes"
 	"fmt"
 	"github.com/AlecAivazis/survey/v2"
@@ -97,7 +97,7 @@ var middlewareMigrateCommand = &cobra.Command{
 			isContain := bytes.Contains(c, []byte("github.com/gin-gonic/gin"))
 			if isContain {
 				fmt.Println("更新文件：", path)
-				c = bytes.ReplaceAll(c, []byte("github.com/gin-gonic/gin"), []byte("a-projects/geekbang/framework/gin"))
+				c = bytes.ReplaceAll(c, []byte("github.com/gin-gonic/gin"), []byte("github.com/JiadeXu/jade/framework/gin"))
 				err = ioutil.WriteFile(path, c, 0644)
 				if err != nil {
 					return err
@@ -202,7 +202,7 @@ var middlewareCreateCommand = &cobra.Command{
 
 var middlewareTmp string = `package {{.}}
 
-import "a-projects/geekbang/framework/gin"
+import "github.com/JiadeXu/jade/framework/gin"
 
 // {{.|title}}Middleware 代表中间件函数
 func {{.|title}}Middleware() gin.HandlerFunc {

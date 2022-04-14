@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"a-projects/geekbang/framework/cobra"
+	"github.com/JiadeXu/jade/framework/cobra"
 )
 
 func TestGenMdDoc(t *testing.T) {

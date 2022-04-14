@@ -1,7 +1,7 @@
 package demo
 
 import (
-	demoService "a-projects/geekbang/app/provider/demo"
+	demoService "github.com/JiadeXu/jade/app/provider/demo"
 )
 
 func UserModelsToUserDTOs(models []UserModel) []UserDTO {

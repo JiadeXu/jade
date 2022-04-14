@@ -8,7 +8,7 @@ import (
 	"io"
 	"os"
 
-	"a-projects/geekbang/framework/gin/binding"
+	"github.com/JiadeXu/jade/framework/gin/binding"
 )
 
 // EnvGinMode indicates environment name for gin mode.

@@ -1,6 +1,6 @@
 package demo
 
-import "a-projects/geekbang/framework"
+import "github.com/JiadeXu/jade/framework"
 
 type DemoProvider struct {
 	framework.ServiceProvider

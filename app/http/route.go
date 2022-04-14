@@ -1,9 +1,9 @@
 package http
 
 import (
-	"a-projects/geekbang/app/http/module/demo"
-	"a-projects/geekbang/framework/gin"
-	"a-projects/geekbang/framework/middleware/static"
+	"github.com/JiadeXu/jade/app/http/module/demo"
+	"github.com/JiadeXu/jade/framework/gin"
+	"github.com/JiadeXu/jade/framework/middleware/static"
 )
 
 func Routes(r *gin.Engine) {

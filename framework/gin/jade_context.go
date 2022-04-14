@@ -1,7 +1,7 @@
 package gin
 
 import (
-	"a-projects/geekbang/framework"
+	"github.com/JiadeXu/jade/framework"
 	"context"
 )
 

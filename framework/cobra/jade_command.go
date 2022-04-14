@@ -1,7 +1,7 @@
 package cobra
 
 import (
-	"a-projects/geekbang/framework"
+	"github.com/JiadeXu/jade/framework"
 	"github.com/robfig/cron/v3"
 	"log"
 )

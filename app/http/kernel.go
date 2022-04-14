@@ -1,6 +1,6 @@
 package http
 
-import "a-projects/geekbang/framework/gin"
+import "github.com/JiadeXu/jade/framework/gin"
 
 func NewHttpEngine() (*gin.Engine, error) {
 	// 设置为 release 为的是默认在启动中不输出调试信息

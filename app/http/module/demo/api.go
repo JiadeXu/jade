@@ -1,9 +1,9 @@
 package demo
 
 import (
-	"a-projects/geekbang/app/provider/demo"
-	"a-projects/geekbang/framework/contract"
-	"a-projects/geekbang/framework/gin"
+	"github.com/JiadeXu/jade/app/provider/demo"
+	"github.com/JiadeXu/jade/framework/contract"
+	"github.com/JiadeXu/jade/framework/gin"
 )
 
 type DemoApi struct {

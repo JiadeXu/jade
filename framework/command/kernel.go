@@ -1,6 +1,6 @@
 package command
 
-import "a-projects/geekbang/framework/cobra"
+import "github.com/JiadeXu/jade/framework/cobra"
 
 func AddKernelCommands(root *cobra.Command) {
 	root.AddCommand(initAppCommand())

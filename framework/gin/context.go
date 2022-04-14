@@ -5,7 +5,7 @@
 package gin
 
 import (
-	"a-projects/geekbang/framework"
+	"github.com/JiadeXu/jade/framework"
 	"errors"
 	"fmt"
 	"io"
@@ -20,8 +20,8 @@ import (
 	"sync"
 	"time"
 
-	"a-projects/geekbang/framework/gin/binding"
-	"a-projects/geekbang/framework/gin/render"
+	"github.com/JiadeXu/jade/framework/gin/binding"
+	"github.com/JiadeXu/jade/framework/gin/render"
 	"github.com/gin-contrib/sse"
 )
 

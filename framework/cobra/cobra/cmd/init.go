@@ -18,7 +18,7 @@ import (
 	"os"
 	"path"
 
-	"a-projects/geekbang/framework/cobra"
+	"github.com/JiadeXu/jade/framework/cobra"
 	"github.com/spf13/viper"
 )
 

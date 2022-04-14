@@ -4,13 +4,13 @@
 
 [![Build Status](https://travis-ci.org/gin-gonic/gin.svg)](https://travis-ci.org/gin-gonic/gin)
 [![codecov](https://codecov.io/gh/gin-gonic/gin/branch/master/graph/badge.svg)](https://codecov.io/gh/gin-gonic/gin)
-[![Go Report Card](https://goreportcard.com/badge/a-projects/geekbang/framework/gin)](https://goreportcard.com/report/a-projects/geekbang/framework/gin)
-[![GoDoc](https://pkg.go.dev/badge/a-projects/geekbang/framework/gin?status.svg)](https://pkg.go.dev/a-projects/geekbang/framework/gin?tab=doc)
+[![Go Report Card](https://goreportcard.com/badge/github.com/JiadeXu/jade/framework/gin)](https://goreportcard.com/report/github.com/JiadeXu/jade/framework/gin)
+[![GoDoc](https://pkg.go.dev/badge/github.com/JiadeXu/jade/framework/gin?status.svg)](https://pkg.go.dev/github.com/JiadeXu/jade/framework/gin?tab=doc)
 [![Join the chat at https://gitter.im/gin-gonic/gin](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gin-gonic/gin?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Sourcegraph](https://sourcegraph.com/a-projects/geekbang/framework/gin/-/badge.svg)](https://sourcegraph.com/a-projects/geekbang/framework/gin?badge)
+[![Sourcegraph](https://sourcegraph.com/github.com/JiadeXu/jade/framework/gin/-/badge.svg)](https://sourcegraph.com/github.com/JiadeXu/jade/framework/gin?badge)
 [![Open Source Helpers](https://www.codetriage.com/gin-gonic/gin/badges/users.svg)](https://www.codetriage.com/gin-gonic/gin)
-[![Release](https://img.shields.io/github/release/gin-gonic/gin.svg?style=flat-square)](https://a-projects/geekbang/framework/gin/releases)
-[![TODOs](https://badgen.net/https/api.tickgit.com/badgen/a-projects/geekbang/framework/gin)](https://www.tickgit.com/browse?repo=a-projects/geekbang/framework/gin)
+[![Release](https://img.shields.io/github/release/gin-gonic/gin.svg?style=flat-square)](https://github.com/JiadeXu/jade/framework/gin/releases)
+[![TODOs](https://badgen.net/https/api.tickgit.com/badgen/github.com/JiadeXu/jade/framework/gin)](https://www.tickgit.com/browse?repo=github.com/JiadeXu/jade/framework/gin)
 
 Gin is a web framework written in Go (Golang). It features a martini-like API with performance that is up to 40 times faster thanks to [httprouter](https://github.com/julienschmidt/httprouter). If you need performance and good productivity, you will love Gin.
 
@@ -87,13 +87,13 @@ To install Gin package, you need to install Go and set your Go workspace first.
 1. The first need [Go](https://golang.org/) installed (**version 1.12+ is required**), then you can use the below Go command to install Gin.
 
 ```sh
-$ go get -u a-projects/geekbang/framework/gin
+$ go get -u github.com/JiadeXu/jade/framework/gin
 ```
 
 2. Import it in your code:
 
 ```go
-import "a-projects/geekbang/framework/gin"
+import "github.com/JiadeXu/jade/framework/gin"
 ```
 
 3. (Optional) Import `net/http`. This is required for example if using constants such as `http.StatusOK`.
@@ -112,7 +112,7 @@ $ cat example.go
 ```go
 package main
 
-import "a-projects/geekbang/framework/gin"
+import "github.com/JiadeXu/jade/framework/gin"
 
 func main() {
 	r := gin.Default()
@@ -192,7 +192,7 @@ $ go build -tags=jsoniter .
 
 ## API Examples
 
-You can find a number of ready-to-run examples at [Gin examples repository](https://a-projects/geekbang/framework/examples).
+You can find a number of ready-to-run examples at [Gin examples repository](https://github.com/JiadeXu/jade/framework/examples).
 
 ### Using GET, POST, PUT, PATCH, DELETE and OPTIONS
 
@@ -354,9 +354,9 @@ ids: map[b:hello a:1234]; names: map[second:tianou first:thinkerou]
 
 #### Single file
 
-References issue [#774](https://a-projects/geekbang/framework/gin/issues/774) and detail [example code](https://a-projects/geekbang/framework/examples/tree/master/upload-file/single).
+References issue [#774](https://github.com/JiadeXu/jade/framework/gin/issues/774) and detail [example code](https://github.com/JiadeXu/jade/framework/examples/tree/master/upload-file/single).
 
-`file.Filename` **SHOULD NOT** be trusted. See [`Content-Disposition` on MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition#Directives) and [#1693](https://a-projects/geekbang/framework/gin/issues/1693)
+`file.Filename` **SHOULD NOT** be trusted. See [`Content-Disposition` on MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition#Directives) and [#1693](https://github.com/JiadeXu/jade/framework/gin/issues/1693)
 
 > The filename is always optional and must not be used blindly by the application: path information should be stripped, and conversion to the server file system rules should be done.
 
@@ -389,7 +389,7 @@ curl -X POST http://localhost:8080/upload \
 
 #### Multiple files
 
-See the detail [example code](https://a-projects/geekbang/framework/examples/tree/master/upload-file/multiple).
+See the detail [example code](https://github.com/JiadeXu/jade/framework/examples/tree/master/upload-file/multiple).
 
 ```go
 func main() {
@@ -754,7 +754,7 @@ When running the above example using the above the `curl` command, it returns er
 
 ### Custom Validators
 
-It is also possible to register custom validators. See the [example code](https://a-projects/geekbang/framework/examples/tree/master/custom-validation/server.go).
+It is also possible to register custom validators. See the [example code](https://github.com/JiadeXu/jade/framework/examples/tree/master/custom-validation/server.go).
 
 ```go
 package main
@@ -763,8 +763,8 @@ import (
 	"net/http"
 	"time"
 
-	"a-projects/geekbang/framework/gin"
-	"a-projects/geekbang/framework/gin/binding"
+	"github.com/JiadeXu/jade/framework/gin"
+	"github.com/JiadeXu/jade/framework/gin/binding"
 	"github.com/go-playground/validator/v10"
 )
 
@@ -818,11 +818,11 @@ $ curl "localhost:8085/bookable?check_in=2000-03-09&check_out=2000-03-10"
 ```
 
 [Struct level validations](https://github.com/go-playground/validator/releases/tag/v8.7) can also be registered this way.
-See the [struct-lvl-validation example](https://a-projects/geekbang/framework/examples/tree/master/struct-lvl-validations) to learn more.
+See the [struct-lvl-validation example](https://github.com/JiadeXu/jade/framework/examples/tree/master/struct-lvl-validations) to learn more.
 
 ### Only Bind Query String
 
-`ShouldBindQuery` function only binds the query params and not the post data. See the [detail information](https://a-projects/geekbang/framework/gin/issues/742#issuecomment-315953017).
+`ShouldBindQuery` function only binds the query params and not the post data. See the [detail information](https://github.com/JiadeXu/jade/framework/gin/issues/742#issuecomment-315953017).
 
 ```go
 package main
@@ -830,7 +830,7 @@ package main
 import (
 	"log"
 
-	"a-projects/geekbang/framework/gin"
+	"github.com/JiadeXu/jade/framework/gin"
 )
 
 type Person struct {
@@ -858,7 +858,7 @@ func startPage(c *gin.Context) {
 
 ### Bind Query String or Post Data
 
-See the [detail information](https://a-projects/geekbang/framework/gin/issues/742#issuecomment-264681292).
+See the [detail information](https://github.com/JiadeXu/jade/framework/gin/issues/742#issuecomment-264681292).
 
 ```go
 package main
@@ -867,7 +867,7 @@ import (
 	"log"
 	"time"
 
-	"a-projects/geekbang/framework/gin"
+	"github.com/JiadeXu/jade/framework/gin"
 )
 
 type Person struct {
@@ -888,7 +888,7 @@ func startPage(c *gin.Context) {
 	var person Person
 	// If `GET`, only `Form` binding engine (`query`) used.
 	// If `POST`, first checks the `content-type` for `JSON` or `XML`, then uses `Form` (`form-data`).
-	// See more at https://a-projects/geekbang/framework/gin/blob/master/binding/binding.go#L48
+	// See more at https://github.com/JiadeXu/jade/framework/gin/blob/master/binding/binding.go#L48
         if c.ShouldBind(&person) == nil {
                 log.Println(person.Name)
                 log.Println(person.Address)
@@ -908,12 +908,12 @@ $ curl -X GET "localhost:8085/testing?name=appleboy&address=xyz&birthday=1992-03
 
 ### Bind Uri
 
-See the [detail information](https://a-projects/geekbang/framework/gin/issues/846).
+See the [detail information](https://github.com/JiadeXu/jade/framework/gin/issues/846).
 
 ```go
 package main
 
-import "a-projects/geekbang/framework/gin"
+import "github.com/JiadeXu/jade/framework/gin"
 
 type Person struct {
 	ID string `uri:"id" binding:"required,uuid"`
@@ -947,7 +947,7 @@ package main
 
 import (
 	"fmt"
-	"a-projects/geekbang/framework/gin"
+	"github.com/JiadeXu/jade/framework/gin"
 )
 
 type testHeader struct {
@@ -979,7 +979,7 @@ func main() {
 
 ### Bind HTML checkboxes
 
-See the [detail information](https://a-projects/geekbang/framework/gin/issues/129#issuecomment-124260092)
+See the [detail information](https://github.com/JiadeXu/jade/framework/gin/issues/129#issuecomment-124260092)
 
 main.go
 
@@ -1375,7 +1375,7 @@ You may use custom delims
 
 #### Custom Template Funcs
 
-See the detail [example code](https://a-projects/geekbang/framework/examples/tree/master/template).
+See the detail [example code](https://github.com/JiadeXu/jade/framework/examples/tree/master/template).
 
 main.go
 
@@ -1386,7 +1386,7 @@ import (
     "net/http"
     "time"
 
-    "a-projects/geekbang/framework/gin"
+    "github.com/JiadeXu/jade/framework/gin"
 )
 
 func formatAsDate(t time.Time) string {
@@ -1438,7 +1438,7 @@ r.GET("/test", func(c *gin.Context) {
 })
 ```
 
-Issuing a HTTP redirect from POST. Refer to issue: [#444](https://a-projects/geekbang/framework/gin/issues/444)
+Issuing a HTTP redirect from POST. Refer to issue: [#444](https://github.com/JiadeXu/jade/framework/gin/issues/444)
 ```go
 r.POST("/test", func(c *gin.Context) {
 	c.Redirect(http.StatusFound, "/foo")
@@ -1607,8 +1607,8 @@ package main
 import (
 	"log"
 
-	"a-projects/geekbang/framework/autotls"
-	"a-projects/geekbang/framework/gin"
+	"github.com/JiadeXu/jade/framework/autotls"
+	"github.com/JiadeXu/jade/framework/gin"
 )
 
 func main() {
@@ -1631,8 +1631,8 @@ package main
 import (
 	"log"
 
-	"a-projects/geekbang/framework/autotls"
-	"a-projects/geekbang/framework/gin"
+	"github.com/JiadeXu/jade/framework/autotls"
+	"github.com/JiadeXu/jade/framework/gin"
 	"golang.org/x/crypto/acme/autocert"
 )
 
@@ -1656,7 +1656,7 @@ func main() {
 
 ### Run multiple service using Gin
 
-See the [question](https://a-projects/geekbang/framework/gin/issues/346) and try the following example:
+See the [question](https://github.com/JiadeXu/jade/framework/gin/issues/346) and try the following example:
 
 ```go
 package main
@@ -1666,7 +1666,7 @@ import (
 	"net/http"
 	"time"
 
-	"a-projects/geekbang/framework/gin"
+	"github.com/JiadeXu/jade/framework/gin"
 	"golang.org/x/sync/errgroup"
 )
 
@@ -1749,7 +1749,7 @@ There are a few approaches you can use to perform a graceful shutdown or restart
 
 #### Third-party packages
 
-We can use [fvbock/endless](https://github.com/fvbock/endless) to replace the default `ListenAndServe`. Refer to issue [#296](https://a-projects/geekbang/framework/gin/issues/296) for more details.
+We can use [fvbock/endless](https://github.com/fvbock/endless) to replace the default `ListenAndServe`. Refer to issue [#296](https://github.com/JiadeXu/jade/framework/gin/issues/296) for more details.
 
 ```go
 router := gin.Default()
@@ -1766,7 +1766,7 @@ Alternatives:
 
 #### Manually
 
-In case you are using Go 1.8 or a later version, you may not need to use those libraries. Consider using `http.Server`'s built-in [Shutdown()](https://golang.org/pkg/net/http/#Server.Shutdown) method for graceful shutdowns. The example below describes its usage, and we've got more examples using gin [here](https://a-projects/geekbang/framework/examples/tree/master/graceful-shutdown).
+In case you are using Go 1.8 or a later version, you may not need to use those libraries. Consider using `http.Server`'s built-in [Shutdown()](https://golang.org/pkg/net/http/#Server.Shutdown) method for graceful shutdowns. The example below describes its usage, and we've got more examples using gin [here](https://github.com/JiadeXu/jade/framework/examples/tree/master/graceful-shutdown).
 
 ```go
 // +build go1.8
@@ -1782,7 +1782,7 @@ import (
 	"syscall"
 	"time"
 
-	"a-projects/geekbang/framework/gin"
+	"github.com/JiadeXu/jade/framework/gin"
 )
 
 func main() {
@@ -1871,7 +1871,7 @@ func loadTemplate() (*template.Template, error) {
 }
 ```
 
-See a complete example in the `https://a-projects/geekbang/framework/examples/tree/master/assets-in-binary` directory.
+See a complete example in the `https://github.com/JiadeXu/jade/framework/examples/tree/master/assets-in-binary` directory.
 
 ### Bind form-data request with custom struct
 
@@ -2003,7 +2003,7 @@ enough to call binding at once.
 * This feature is only needed for some formats -- `JSON`, `XML`, `MsgPack`,
 `ProtoBuf`. For other formats, `Query`, `Form`, `FormPost`, `FormMultipart`,
 can be called by `c.ShouldBind()` multiple times without any damage to
-performance (See [#1341](https://a-projects/geekbang/framework/gin/pull/1341)).
+performance (See [#1341](https://github.com/JiadeXu/jade/framework/gin/pull/1341)).
 
 ### http2 server push
 
@@ -2016,7 +2016,7 @@ import (
 	"html/template"
 	"log"
 
-	"a-projects/geekbang/framework/gin"
+	"github.com/JiadeXu/jade/framework/gin"
 )
 
 var html = template.Must(template.New("https").Parse(`
@@ -2069,7 +2069,7 @@ import (
 	"log"
 	"net/http"
 
-	"a-projects/geekbang/framework/gin"
+	"github.com/JiadeXu/jade/framework/gin"
 )
 
 func main() {
@@ -2101,7 +2101,7 @@ func main() {
 import (
     "fmt"
 
-    "a-projects/geekbang/framework/gin"
+    "github.com/JiadeXu/jade/framework/gin"
 )
 
 func main() {
@@ -2139,7 +2139,7 @@ IPv6 CIDRs.
 import (
 	"fmt"
 
-	"a-projects/geekbang/framework/gin"
+	"github.com/JiadeXu/jade/framework/gin"
 )
 
 func main() {
@@ -2206,7 +2206,7 @@ func TestPingRoute(t *testing.T) {
 
 ## Users
 
-Awesome project lists using [Gin](https://a-projects/geekbang/framework/gin) web framework.
+Awesome project lists using [Gin](https://github.com/JiadeXu/jade/framework/gin) web framework.
 
 * [gorush](https://github.com/appleboy/gorush): A push notification server written in Go.
 * [fnproject](https://github.com/fnproject/fn): The container native, cloud agnostic serverless platform.

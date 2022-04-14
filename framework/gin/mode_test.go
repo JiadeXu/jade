@@ -8,7 +8,7 @@ import (
 	"os"
 	"testing"
 
-	"a-projects/geekbang/framework/gin/binding"
+	"github.com/JiadeXu/jade/framework/gin/binding"
 	"github.com/stretchr/testify/assert"
 )
 

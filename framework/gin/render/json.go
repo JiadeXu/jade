@@ -10,8 +10,8 @@ import (
 	"html/template"
 	"net/http"
 
-	"a-projects/geekbang/framework/gin/internal/bytesconv"
-	"a-projects/geekbang/framework/gin/internal/json"
+	"github.com/JiadeXu/jade/framework/gin/internal/bytesconv"
+	"github.com/JiadeXu/jade/framework/gin/internal/json"
 )
 
 // JSON contains the given interface object.

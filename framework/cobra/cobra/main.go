@@ -16,7 +16,7 @@ package main
 import (
 	"os"
 
-	"a-projects/geekbang/framework/cobra/cobra/cmd"
+	"github.com/JiadeXu/jade/framework/cobra/cobra/cmd"
 )
 
 func main() {

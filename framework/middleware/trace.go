@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"a-projects/geekbang/framework/contract"
-	"a-projects/geekbang/framework/gin"
+	"github.com/JiadeXu/jade/framework/contract"
+	"github.com/JiadeXu/jade/framework/gin"
 )
 
 // recovery 机制将协程中的函数异常进行捕获

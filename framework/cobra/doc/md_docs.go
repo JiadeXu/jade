@@ -23,7 +23,7 @@ import (
 	"strings"
 	"time"
 
-	"a-projects/geekbang/framework/cobra"
+	"github.com/JiadeXu/jade/framework/cobra"
 )
 
 func printOptions(buf *bytes.Buffer, cmd *cobra.Command, name string) error {

@@ -1,9 +1,9 @@
 package services
 
 import (
-	"a-projects/geekbang/framework"
-	"a-projects/geekbang/framework/contract"
-	"a-projects/geekbang/framework/util"
+	"github.com/JiadeXu/jade/framework"
+	"github.com/JiadeXu/jade/framework/contract"
+	"github.com/JiadeXu/jade/framework/util"
 	"fmt"
 	rotatelogs "github.com/lestrrat-go/file-rotatelogs"
 	"github.com/pkg/errors"

@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"a-projects/geekbang/framework/gin/internal/bytesconv"
+	"github.com/JiadeXu/jade/framework/gin/internal/bytesconv"
 )
 
 // AuthUserKey is the cookie name for user credential in basic auth.

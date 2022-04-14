@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
-	"a-projects/geekbang/framework/gin/internal/bytesconv"
-	"a-projects/geekbang/framework/gin/internal/json"
+	"github.com/JiadeXu/jade/framework/gin/internal/bytesconv"
+	"github.com/JiadeXu/jade/framework/gin/internal/json"
 )
 
 var errUnknownType = errors.New("unknown type")

@@ -1,9 +1,9 @@
 package command
 
 import (
-	"a-projects/geekbang/framework/cobra"
-	"a-projects/geekbang/framework/contract"
-	"a-projects/geekbang/framework/util"
+	"github.com/JiadeXu/jade/framework/cobra"
+	"github.com/JiadeXu/jade/framework/contract"
+	"github.com/JiadeXu/jade/framework/util"
 	"fmt"
 )
 

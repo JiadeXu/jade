@@ -5,8 +5,8 @@ import (
 	"os"
 	"text/template"
 
-	"a-projects/geekbang/framework/cobra"
-	"a-projects/geekbang/framework/cobra/cobra/tpl"
+	"github.com/JiadeXu/jade/framework/cobra"
+	"github.com/JiadeXu/jade/framework/cobra/cobra/tpl"
 )
 
 // Project contains name, license and paths to projects.

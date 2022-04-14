@@ -7,7 +7,7 @@ package gin
 import (
 	"log"
 
-	"a-projects/geekbang/framework/gin/binding"
+	"github.com/JiadeXu/jade/framework/gin/binding"
 )
 
 // BindWith binds the passed struct pointer using the specified binding engine.

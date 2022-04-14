@@ -1,7 +1,7 @@
 package command
 
 import (
-	"a-projects/geekbang/framework/cobra"
+	"github.com/JiadeXu/jade/framework/cobra"
 	"fmt"
 	"log"
 	"os/exec"

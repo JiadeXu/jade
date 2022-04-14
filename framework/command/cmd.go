@@ -1,9 +1,9 @@
 package command
 
 import (
-	"a-projects/geekbang/framework/cobra"
-	"a-projects/geekbang/framework/contract"
-	"a-projects/geekbang/framework/util"
+	"github.com/JiadeXu/jade/framework/cobra"
+	"github.com/JiadeXu/jade/framework/contract"
+	"github.com/JiadeXu/jade/framework/util"
 	"fmt"
 	"github.com/AlecAivazis/survey/v2"
 	"github.com/jianfengye/collection"
@@ -128,7 +128,7 @@ var cmdTmpl string = `package {{.}}
 import (
 	"fmt"
 
-	"a-projects/geekbang/framework/cobra"
+	"github.com/JiadeXu/jade/framework/cobra"
 )
 
 var {{.|title}}Command = &cobra.Command{

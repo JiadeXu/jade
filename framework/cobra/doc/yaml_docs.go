@@ -21,7 +21,7 @@ import (
 	"sort"
 	"strings"
 
-	"a-projects/geekbang/framework/cobra"
+	"github.com/JiadeXu/jade/framework/cobra"
 	"github.com/spf13/pflag"
 	"gopkg.in/yaml.v2"
 )

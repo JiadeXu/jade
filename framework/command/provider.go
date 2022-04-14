@@ -1,10 +1,10 @@
 package command
 
 import (
-	"a-projects/geekbang/framework"
-	"a-projects/geekbang/framework/cobra"
-	"a-projects/geekbang/framework/contract"
-	"a-projects/geekbang/framework/util"
+	"github.com/JiadeXu/jade/framework"
+	"github.com/JiadeXu/jade/framework/cobra"
+	"github.com/JiadeXu/jade/framework/contract"
+	"github.com/JiadeXu/jade/framework/util"
 	"fmt"
 	"github.com/AlecAivazis/survey/v2"
 	"github.com/jianfengye/collection"
@@ -167,7 +167,7 @@ type Service interface {
 var providerTmp string = `package {{.}}
 
 import (
-	"a-projects/geekbang/framework"
+	"github.com/JiadeXu/jade/framework"
 )
 
 type {{.|title}}Provider struct {
@@ -199,7 +199,7 @@ func (sp *{{.|title}}Provider) Boot(c framework.Container) error {
 
 var serviceTmp string = `package {{.}}
 
-import "a-projects/geekbang/framework"
+import "github.com/JiadeXu/jade/framework"
 
 type {{.|title}}Service struct {
 	container framework.Container

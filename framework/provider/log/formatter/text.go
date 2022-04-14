@@ -1,7 +1,7 @@
 package formatter
 
 import (
-	"a-projects/geekbang/framework/contract"
+	"github.com/JiadeXu/jade/framework/contract"
 	"bytes"
 	"fmt"
 	"time"
