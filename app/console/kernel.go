@@ -44,7 +44,7 @@ func AddAppCommand(rootCmd *cobra.Command) {
 	rootCmd.AddCommand(demo.InitFoo())
 
 	// 每秒调用一次Foo命令
-	//rootCmd.AddDistributedCronCommand("foo", "* * * * * *", demo.FooCommand, 2 * time.Second)
+	//rootCmd.AddDistributedCronCommand("foo", "* * * * * *", demo.md.FooCommand, 2 * time.Second)
 
 	// 启动一个分布式任务调度，调度的服务名称为init_func_for_test，每个节点每5s调用一次Foo命令，抢占到了调度任务的节点将抢占锁持续挂载2s才释放
 	rootCmd.AddDistributedCronCommand("foo_func_for_test", "*/5 * * * * *", demo.FooCommand, 2*time.Second)

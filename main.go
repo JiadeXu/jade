@@ -30,7 +30,7 @@ func main() {
 
 	// 后续初始化需要绑定的服务提供者
 	// 将 HTTP 引擎初始化，并且作为服务提供者绑定到服务容器中
-	if engine, err := http.NewHttpEngine(); err == nil {
+	if engine, err := http.NewHttpEngine(container); err == nil {
 		container.Bind(&kernel.JadeKernelProvider{HttpEngine: engine})
 	}
 

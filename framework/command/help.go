@@ -8,8 +8,8 @@ import (
 
 // helpCommand show current envionment
 var DemoCommand = &cobra.Command{
-	Use:   "demo",
-	Short: "demo for framework",
+	Use:   "demo.md",
+	Short: "demo.md for framework",
 	Run: func(c *cobra.Command, args []string) {
 		container := c.GetContainer()
 		appService := container.MustMake(contract.AppKey).(contract.App)
