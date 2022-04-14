@@ -1,0 +1,15 @@
+mysql:
+    hostname: 192.168.100.13
+    username: Jade
+    password: env(DB_PASSWORD)
+    timeout: 1
+    readtime: 2.3
+
+default:
+    driver: mysql
+    hostname: 192.168.100.13
+    database: hade
+    username: Jade
+    password: "xjd121380"
+    charset: utf8mb4
+    collation: utf8mb4_unicode_ci

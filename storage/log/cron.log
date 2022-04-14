@@ -1,0 +1,182 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /dist/*filepath           --> a-projects/geekbang/framework/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /dist/*filepath           --> a-projects/geekbang/framework/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /demo/demo                --> a-projects/geekbang/app/http/module/demo.(*DemoApi).Demo-fm (3 handlers)
+[GIN-debug] GET    /demo/demo2               --> a-projects/geekbang/app/http/module/demo.(*DemoApi).Demo2-fm (3 handlers)
+[GIN-debug] POST   /demo/demo_post           --> a-projects/geekbang/app/http/module/demo.(*DemoApi).DemoPost-fm (3 handlers)
+daemon started
+2022/04/11 17:23:51 cron execute foo command
+2022/04/11 17:23:51 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:23:52 cron execute foo command
+2022/04/11 17:23:52 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:23:53 cron execute foo command
+2022/04/11 17:23:53 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:23:54 cron execute foo command
+2022/04/11 17:23:54 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:23:55 cron execute foo command
+2022/04/11 17:23:55 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:23:56 cron execute foo command
+2022/04/11 17:23:56 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:23:57 cron execute foo command
+2022/04/11 17:23:57 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:23:58 cron execute foo command
+2022/04/11 17:23:58 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:23:59 cron execute foo command
+2022/04/11 17:23:59 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:00 cron execute foo command
+2022/04/11 17:24:00 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:01 cron execute foo command
+2022/04/11 17:24:01 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:02 cron execute foo command
+2022/04/11 17:24:02 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:03 cron execute foo command
+2022/04/11 17:24:03 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:04 cron execute foo command
+2022/04/11 17:24:04 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:05 cron execute foo command
+2022/04/11 17:24:05 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:06 cron execute foo command
+2022/04/11 17:24:06 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:07 cron execute foo command
+2022/04/11 17:24:07 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:08 cron execute foo command
+2022/04/11 17:24:08 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:09 cron execute foo command
+2022/04/11 17:24:09 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:10 cron execute foo command
+2022/04/11 17:24:10 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:11 cron execute foo command
+2022/04/11 17:24:11 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:12 cron execute foo command
+2022/04/11 17:24:12 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:13 cron execute foo command
+2022/04/11 17:24:13 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:14 cron execute foo command
+2022/04/11 17:24:14 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:15 cron execute foo command
+2022/04/11 17:24:15 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:16 cron execute foo command
+2022/04/11 17:24:16 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:17 cron execute foo command
+2022/04/11 17:24:17 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:18 cron execute foo command
+2022/04/11 17:24:18 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:19 cron execute foo command
+2022/04/11 17:24:19 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:20 cron execute foo command
+2022/04/11 17:24:20 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:21 cron execute foo command
+2022/04/11 17:24:21 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:22 cron execute foo command
+2022/04/11 17:24:22 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:23 cron execute foo command
+2022/04/11 17:24:23 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:24 cron execute foo command
+2022/04/11 17:24:24 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:25 cron execute foo command
+2022/04/11 17:24:25 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:26 cron execute foo command
+2022/04/11 17:24:26 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:27 cron execute foo command
+2022/04/11 17:24:27 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:28 cron execute foo command
+2022/04/11 17:24:28 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:29 cron execute foo command
+2022/04/11 17:24:29 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:30 cron execute foo command
+2022/04/11 17:24:30 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:31 cron execute foo command
+2022/04/11 17:24:31 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:32 cron execute foo command
+2022/04/11 17:24:32 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:33 cron execute foo command
+2022/04/11 17:24:33 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:34 cron execute foo command
+2022/04/11 17:24:34 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:35 cron execute foo command
+2022/04/11 17:24:35 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:36 cron execute foo command
+2022/04/11 17:24:36 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:37 cron execute foo command
+2022/04/11 17:24:37 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:38 cron execute foo command
+2022/04/11 17:24:38 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:39 cron execute foo command
+2022/04/11 17:24:39 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:40 cron execute foo command
+2022/04/11 17:24:40 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:41 cron execute foo command
+2022/04/11 17:24:41 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:42 cron execute foo command
+2022/04/11 17:24:42 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:43 cron execute foo command
+2022/04/11 17:24:43 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:44 cron execute foo command
+2022/04/11 17:24:44 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:45 cron execute foo command
+2022/04/11 17:24:45 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:46 cron execute foo command
+2022/04/11 17:24:46 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:47 cron execute foo command
+2022/04/11 17:24:47 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:48 cron execute foo command
+2022/04/11 17:24:48 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:49 cron execute foo command
+2022/04/11 17:24:49 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:50 cron execute foo command
+2022/04/11 17:24:50 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:51 cron execute foo command
+2022/04/11 17:24:51 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:52 cron execute foo command
+2022/04/11 17:24:52 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:53 cron execute foo command
+2022/04/11 17:24:53 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:54 cron execute foo command
+2022/04/11 17:24:54 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:55 cron execute foo command
+2022/04/11 17:24:55 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:56 cron execute foo command
+2022/04/11 17:24:56 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:57 cron execute foo command
+2022/04/11 17:24:57 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:58 cron execute foo command
+2022/04/11 17:24:58 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:24:59 cron execute foo command
+2022/04/11 17:24:59 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:25:00 cron execute foo command
+2022/04/11 17:25:00 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:25:01 cron execute foo command
+2022/04/11 17:25:01 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:25:02 cron execute foo command
+2022/04/11 17:25:02 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:25:03 cron execute foo command
+2022/04/11 17:25:03 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:25:04 cron execute foo command
+2022/04/11 17:25:04 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:25:05 cron execute foo command
+2022/04/11 17:25:05 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:25:06 cron execute foo command
+2022/04/11 17:25:06 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:25:07 cron execute foo command
+2022/04/11 17:25:07 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:25:08 cron execute foo command
+2022/04/11 17:25:08 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:25:09 cron execute foo command
+2022/04/11 17:25:09 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:25:10 cron execute foo command
+2022/04/11 17:25:10 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:25:11 cron execute foo command
+2022/04/11 17:25:11 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:25:12 cron execute foo command
+2022/04/11 17:25:12 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:25:13 cron execute foo command
+2022/04/11 17:25:13 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:25:14 cron execute foo command
+2022/04/11 17:25:14 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
+2022/04/11 17:25:15 cron execute foo command
+2022/04/11 17:25:15 &{<nil> map[jade:app:0x140000943d0 jade:kernel:0x14000098090] map[jade:app:0x14000090c00 jade:kernel:0x14000098098] {{0 0} 0 0 0 0}}
