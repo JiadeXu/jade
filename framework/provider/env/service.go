@@ -1,10 +1,10 @@
 package env
 
 import (
-	"github.com/JiadeXu/jade/framework/contract"
 	"bufio"
 	"bytes"
 	"errors"
+	"github.com/JiadeXu/jade/framework/contract"
 	"io"
 	"os"
 	"path"
@@ -72,7 +72,6 @@ func NewJadeEnv(params ...interface{}) (interface{}, error) {
 		}
 		jadeEnv.maps[pair[0]] = pair[1]
 	}
-
 	return jadeEnv, nil
 }
 

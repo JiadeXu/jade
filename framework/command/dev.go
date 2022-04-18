@@ -1,12 +1,12 @@
 package command
 
 import (
+	"errors"
+	"fmt"
 	"github.com/JiadeXu/jade/framework"
 	"github.com/JiadeXu/jade/framework/cobra"
 	"github.com/JiadeXu/jade/framework/contract"
 	"github.com/JiadeXu/jade/framework/util"
-	"errors"
-	"fmt"
 	"github.com/fsnotify/fsnotify"
 	"io/fs"
 	"net/http"
@@ -161,7 +161,7 @@ func (p *Proxy) restartBackend() error {
 	port := p.devConfig.Backend.Port
 	jadeAddress := fmt.Sprintf(":" + port)
 	// 使用命令行启动后端进程
-	cmd := exec.Command("./jade", "app", "start", "--address=" + jadeAddress)
+	cmd := exec.Command("./jade", "app", "start", "--address="+jadeAddress)
 	cmd.Stdout = os.NewFile(0, os.DevNull)
 	cmd.Stderr = os.Stderr
 	fmt.Println("启动后端服务: ", "http://127.0.0.1:"+port)
@@ -230,7 +230,6 @@ func (p *Proxy) startProxy(startFrontend, startBackend bool) error {
 		return nil
 	}
 
-
 	if frontendURL, err = url.Parse(fmt.Sprintf("%s%s", "http://127.0.0.1:", p.devConfig.Frontend.Port)); err != nil {
 		return err
 	}
@@ -242,7 +241,7 @@ func (p *Proxy) startProxy(startFrontend, startBackend bool) error {
 	// 设置反向代理
 	proxyReverse := p.newProxyReverseProxy(frontendURL, backendURL)
 	p.proxyServer = &http.Server{
-		Addr: "127.0.0.1:" + p.devConfig.Port,
+		Addr:    "127.0.0.1:" + p.devConfig.Port,
 		Handler: proxyReverse,
 	}
 
@@ -275,7 +274,7 @@ func (p *Proxy) monitorBackend() error {
 		}
 		return watcher.Add(path)
 	})
-	
+
 	refreshTime := p.devConfig.Backend.RefreshTime
 	t := time.NewTimer(time.Duration(refreshTime) * time.Second)
 	t.Stop()

@@ -1,4 +1,3 @@
-
 // Package http API.
 // @title hade
 // @version 1.1

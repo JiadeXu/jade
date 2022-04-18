@@ -1,12 +1,12 @@
 package command
 
 import (
+	"fmt"
+	"github.com/AlecAivazis/survey/v2"
 	"github.com/JiadeXu/jade/framework"
 	"github.com/JiadeXu/jade/framework/cobra"
 	"github.com/JiadeXu/jade/framework/contract"
 	"github.com/JiadeXu/jade/framework/util"
-	"fmt"
-	"github.com/AlecAivazis/survey/v2"
 	"github.com/jianfengye/collection"
 	"github.com/pkg/errors"
 	"os"
@@ -22,7 +22,7 @@ func initProviderCommand() *cobra.Command {
 }
 
 var providerCommand = &cobra.Command{
-	Use: "provider",
+	Use:   "provider",
 	Short: "服务提供相关命令",
 	RunE: func(c *cobra.Command, args []string) error {
 		if len(args) == 0 {
@@ -33,7 +33,7 @@ var providerCommand = &cobra.Command{
 }
 
 var providerListCommand = &cobra.Command{
-	Use: "list",
+	Use:   "list",
 	Short: "列出容器内的所有服务",
 	RunE: func(cmd *cobra.Command, args []string) error {
 		container := cmd.GetContainer()
@@ -51,9 +51,9 @@ var providerListCommand = &cobra.Command{
 
 // providerCreateCommand 创建一个新的服务，包括服务提供者，服务接口协议，服务实例
 var providerCreateCommand = &cobra.Command{
-	Use: "new",
+	Use:     "new",
 	Aliases: []string{"create", "init"},
-	Short: "创建一个服务",
+	Short:   "创建一个服务",
 	RunE: func(cmd *cobra.Command, args []string) error {
 		container := cmd.GetContainer()
 		fmt.Println("创建一个服务")

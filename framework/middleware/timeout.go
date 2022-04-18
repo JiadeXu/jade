@@ -1,9 +1,9 @@
 package middleware
 
 import (
-	"github.com/JiadeXu/jade/framework/gin"
 	"context"
 	"fmt"
+	"github.com/JiadeXu/jade/framework/gin"
 	"log"
 	"time"
 )

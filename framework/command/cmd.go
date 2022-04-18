@@ -1,11 +1,11 @@
 package command
 
 import (
+	"fmt"
+	"github.com/AlecAivazis/survey/v2"
 	"github.com/JiadeXu/jade/framework/cobra"
 	"github.com/JiadeXu/jade/framework/contract"
 	"github.com/JiadeXu/jade/framework/util"
-	"fmt"
-	"github.com/AlecAivazis/survey/v2"
 	"github.com/jianfengye/collection"
 	"github.com/pkg/errors"
 	"os"
@@ -21,7 +21,7 @@ func initCmdCommand() *cobra.Command {
 }
 
 var cmdCommand = &cobra.Command{
-	Use: "command",
+	Use:   "command",
 	Short: "控制台命令相关",
 	RunE: func(c *cobra.Command, args []string) error {
 		if len(args) == 0 {
@@ -33,7 +33,7 @@ var cmdCommand = &cobra.Command{
 
 // cmdListCommand 列出所有的控制台命令
 var cmdListCommand = &cobra.Command{
-	Use: "list",
+	Use:   "list",
 	Short: "列出所有控制台命令",
 	RunE: func(c *cobra.Command, args []string) error {
 		cmds := c.Root().Commands()
@@ -49,9 +49,9 @@ var cmdListCommand = &cobra.Command{
 
 // cmdListCommand 列出所有的控制台命令
 var cmdNewCommand = &cobra.Command{
-	Use: "new",
+	Use:     "new",
 	Aliases: []string{"create", "init"},
-	Short: "创建一个控制台命令",
+	Short:   "创建一个控制台命令",
 	RunE: func(c *cobra.Command, args []string) error {
 		container := c.GetContainer()
 
@@ -103,7 +103,7 @@ var cmdNewCommand = &cobra.Command{
 		funcs := template.FuncMap{"title": strings.Title}
 		{
 			// 创建name.go
-			file := filepath.Join(pFolder, folder, name + ".go")
+			file := filepath.Join(pFolder, folder, name+".go")
 			f, err := os.Create(file)
 			if err != nil {
 				return errors.Cause(err)

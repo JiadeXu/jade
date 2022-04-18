@@ -32,6 +32,7 @@ require (
 	github.com/stretchr/testify v1.7.0
 	github.com/swaggo/swag v1.8.1 // indirect
 	github.com/ugorji/go/codec v1.1.7
+	go.uber.org/zap v1.17.0 // indirect
 	golang.org/x/net v0.0.0-20210805182204-aaa1db679c0d // indirect
 	gopkg.in/yaml.v2 v2.4.0
 )

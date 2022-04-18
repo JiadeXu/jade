@@ -1,9 +1,9 @@
 package command
 
 import (
+	"fmt"
 	"github.com/JiadeXu/jade/framework/cobra"
 	"github.com/JiadeXu/jade/framework/contract"
-	"fmt"
 )
 
 // helpCommand show current envionment

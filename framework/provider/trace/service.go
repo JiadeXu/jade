@@ -1,10 +1,10 @@
 package trace
 
 import (
+	"context"
 	"github.com/JiadeXu/jade/framework"
 	"github.com/JiadeXu/jade/framework/contract"
 	"github.com/JiadeXu/jade/framework/gin"
-	"context"
 	"net/http"
 	"time"
 )

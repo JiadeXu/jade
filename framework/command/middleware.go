@@ -1,12 +1,12 @@
 package command
 
 import (
-	"github.com/JiadeXu/jade/framework/cobra"
-	"github.com/JiadeXu/jade/framework/contract"
-	"github.com/JiadeXu/jade/framework/util"
 	"bytes"
 	"fmt"
 	"github.com/AlecAivazis/survey/v2"
+	"github.com/JiadeXu/jade/framework/cobra"
+	"github.com/JiadeXu/jade/framework/contract"
+	"github.com/JiadeXu/jade/framework/util"
 	"github.com/go-git/go-git/v5"
 	"github.com/jianfengye/collection"
 	"github.com/pkg/errors"
@@ -18,7 +18,6 @@ import (
 	"strings"
 	"text/template"
 )
-
 
 // 初始化中间件相关命令
 func initMiddlewareCommand() *cobra.Command {
@@ -42,7 +41,7 @@ var middlewareCommand = &cobra.Command{
 
 // 从gin-contrib中迁移中间件
 var middlewareMigrateCommand = &cobra.Command{
-	Use: "migrate",
+	Use:   "migrate",
 	Short: "迁移gin-contrib中间件, 迁移地址：https://github.com/gin-contrib/[middleware].git",
 	RunE: func(c *cobra.Command, args []string) error {
 		container := c.GetContainer()
@@ -65,7 +64,7 @@ var middlewareMigrateCommand = &cobra.Command{
 		fmt.Println("下载中间件 gin-contrib:")
 		fmt.Println(url)
 		_, err := git.PlainClone(path.Join(middlewarePath, repo), false, &git.CloneOptions{
-			URL: url,
+			URL:      url,
 			Progress: os.Stdout,
 		})
 		if err != nil {

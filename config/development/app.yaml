@@ -3,6 +3,7 @@ url: http://127.0.0.1:8066
 swagger_open: true
 
 dev_fresh: 1
+close_wait: 3
 
 path:
   storage: "/jade_sts/testdata/storage/"

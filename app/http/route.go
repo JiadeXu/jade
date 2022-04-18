@@ -8,7 +8,6 @@ import (
 	"github.com/JiadeXu/jade/framework/middleware/static"
 
 	ginSwagger "github.com/JiadeXu/jade/framework/middleware/gin-swagger"
-
 )
 
 func Routes(r *gin.Engine) {

@@ -1,10 +1,10 @@
 package command
 
 import (
+	"fmt"
 	"github.com/JiadeXu/jade/framework/cobra"
 	"github.com/JiadeXu/jade/framework/contract"
 	"github.com/JiadeXu/jade/framework/util"
-	"fmt"
 	"github.com/erikdubbelboer/gspt"
 	"github.com/sevlyar/go-daemon"
 	"io/ioutil"

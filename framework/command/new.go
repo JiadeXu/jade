@@ -23,7 +23,7 @@ func initNewCommand() *cobra.Command {
 }
 
 var newCommand = &cobra.Command{
-	Use: "new",
+	Use:     "new",
 	Aliases: []string{"create", "init"},
 	RunE: func(c *cobra.Command, args []string) error {
 		currentPath := util.GetExecDirectory()

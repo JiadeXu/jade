@@ -1,10 +1,10 @@
 package config
 
 import (
-	"github.com/JiadeXu/jade/framework"
-	"github.com/JiadeXu/jade/framework/contract"
 	"bytes"
 	"fmt"
+	"github.com/JiadeXu/jade/framework"
+	"github.com/JiadeXu/jade/framework/contract"
 	"github.com/fsnotify/fsnotify"
 	"github.com/mitchellh/mapstructure"
 	"log"

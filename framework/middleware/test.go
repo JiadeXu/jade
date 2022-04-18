@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"github.com/JiadeXu/jade/framework/gin"
 	"fmt"
+	"github.com/JiadeXu/jade/framework/gin"
 )
 
 func Test1() gin.HandlerFunc {

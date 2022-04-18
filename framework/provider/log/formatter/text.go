@@ -1,9 +1,9 @@
 package formatter
 
 import (
-	"github.com/JiadeXu/jade/framework/contract"
 	"bytes"
 	"fmt"
+	"github.com/JiadeXu/jade/framework/contract"
 	"time"
 )
 

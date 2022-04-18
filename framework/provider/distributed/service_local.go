@@ -1,9 +1,9 @@
 package distributed
 
 import (
+	"errors"
 	"github.com/JiadeXu/jade/framework"
 	"github.com/JiadeXu/jade/framework/contract"
-	"errors"
 	"io/ioutil"
 	"os"
 	"path/filepath"

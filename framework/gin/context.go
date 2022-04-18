@@ -5,9 +5,9 @@
 package gin
 
 import (
-	"github.com/JiadeXu/jade/framework"
 	"errors"
 	"fmt"
+	"github.com/JiadeXu/jade/framework"
 	"io"
 	"io/ioutil"
 	"math"
