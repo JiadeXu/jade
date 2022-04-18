@@ -5,6 +5,7 @@ import (
 	"github.com/JiadeXu/jade/app/http"
 	"github.com/JiadeXu/jade/framework"
 	"github.com/JiadeXu/jade/framework/provider/app"
+	"github.com/JiadeXu/jade/framework/provider/cache"
 	"github.com/JiadeXu/jade/framework/provider/config"
 	"github.com/JiadeXu/jade/framework/provider/distributed"
 	"github.com/JiadeXu/jade/framework/provider/env"
@@ -12,6 +13,7 @@ import (
 	"github.com/JiadeXu/jade/framework/provider/kernel"
 	"github.com/JiadeXu/jade/framework/provider/log"
 	"github.com/JiadeXu/jade/framework/provider/orm"
+	"github.com/JiadeXu/jade/framework/provider/redis"
 	"github.com/JiadeXu/jade/framework/provider/trace"
 )
 
@@ -30,6 +32,8 @@ func main() {
 	container.Bind(&log.JadeLogServiceProvider{})
 	container.Bind(&orm.GormProvider{})
 
+	container.Bind(&redis.RedisProvider{})
+	container.Bind(&cache.JadeCacheProvider{})
 	// 后续初始化需要绑定的服务提供者
 	// 将 HTTP 引擎初始化，并且作为服务提供者绑定到服务容器中
 	if engine, err := http.NewHttpEngine(container); err == nil {

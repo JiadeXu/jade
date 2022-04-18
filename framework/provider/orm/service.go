@@ -16,7 +16,7 @@ import (
 // JadeGorm 代表Jade框架的orm实现
 type JadeGorm struct {
 	container framework.Container
-	dbs map[string]*gorm.DB // key为dsn, value为gorm.DB（连接池）
+	dbs       map[string]*gorm.DB // key为dsn, value为gorm.DB（连接池）
 
 	lock *sync.RWMutex
 }
@@ -28,8 +28,8 @@ func NewJadeGorm(params ...interface{}) (interface{}, error) {
 
 	return &JadeGorm{
 		container: container,
-		dbs: dbs,
-		lock: lock,
+		dbs:       dbs,
+		lock:      lock,
 	}, nil
 }
 
@@ -47,14 +47,14 @@ func (app *JadeGorm) GetDB(option ...contract.DBOption) (*gorm.DB, error) {
 	config.Config = &gorm.Config{
 		Logger: ormLogger,
 	}
-	
+
 	// option对opt进行修改
 	for _, opt := range option {
 		if err := opt(app.container, config); err != nil {
 			return nil, err
 		}
 	}
-	
+
 	// 如果最终的config没有设置dsn就生成dsn
 	if config.Dsn == "" {
 		dsn, err := config.FormatDsn()
@@ -63,7 +63,7 @@ func (app *JadeGorm) GetDB(option ...contract.DBOption) (*gorm.DB, error) {
 		}
 		config.Dsn = dsn
 	}
-	
+
 	// 判断是否已经实例化了gorm.DB
 	app.lock.RLock()
 	if db, ok := app.dbs[config.Dsn]; ok {
@@ -74,7 +74,7 @@ func (app *JadeGorm) GetDB(option ...contract.DBOption) (*gorm.DB, error) {
 	// 没有实例化
 	app.lock.Lock()
 	defer app.lock.Unlock()
-	
+
 	// 实例化gorm.DB
 	var db *gorm.DB
 	var err error
@@ -111,7 +111,6 @@ func (app *JadeGorm) GetDB(option ...contract.DBOption) (*gorm.DB, error) {
 			sqlDB.SetConnMaxLifetime(liftTime)
 		}
 	}
-
 
 	if config.ConnMaxIdletime != "" {
 		liftTime, err := time.ParseDuration(config.ConnMaxIdletime)

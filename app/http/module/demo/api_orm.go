@@ -2,23 +2,11 @@ package demo
 
 import (
 	"database/sql"
-	demoService "github.com/JiadeXu/jade/app/provider/demo"
 	"github.com/JiadeXu/jade/framework/contract"
 	"github.com/JiadeXu/jade/framework/gin"
 	"github.com/JiadeXu/jade/framework/provider/orm"
 	"time"
 )
-
-func Register(r *gin.Engine) error {
-	api := NewDemoApi()
-	r.Bind(&demoService.DemoProvider{})
-
-	r.GET("/demo/demo", api.Demo)
-	r.GET("/demo/demo2", api.Demo2)
-	r.POST("/demo/demo_post", api.DemoPost)
-	r.GET("/demo/orm", api.DemoOrm)
-	return nil
-}
 
 func (api *DemoApi) DemoOrm(c *gin.Context) {
 	logger := c.MustMakeLog()
@@ -40,7 +28,7 @@ func (api *DemoApi) DemoOrm(c *gin.Context) {
 		c.AbortWithError(500, err)
 		return
 	}
-	logger.Info(c, "migrate ok", nil)// 插入一条数据
+	logger.Info(c, "migrate ok", nil) // 插入一条数据
 	email := "foo@gmail.com"
 	name := "foo"
 	age := uint8(25)

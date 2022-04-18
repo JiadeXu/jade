@@ -132,4 +132,3 @@ func WithRedisConfig(f func(options *contract.RedisConfig)) contract.RedisOption
 		return nil
 	}
 }
-

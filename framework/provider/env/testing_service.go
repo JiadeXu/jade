@@ -1,6 +1,5 @@
 package env
 
-
 // JadeEnv 是 Env 的具体实现
 type JadeTestingEnv struct {
 	folder string            // 代表.env所在的目录

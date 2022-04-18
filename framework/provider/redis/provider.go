@@ -33,4 +33,3 @@ func (j *RedisProvider) Params(container framework.Container) []interface{} {
 func (j *RedisProvider) Name() string {
 	return contract.RedisKey
 }
-

@@ -6,7 +6,7 @@ import (
 	"github.com/go-redis/redis/v8"
 )
 
-const RedisKey = "jade:redis.yaml"
+const RedisKey = "jade:redis"
 
 // RedisOption 代表初始化的时候的选项
 type RedisOption func(container framework.Container, config *RedisConfig) error

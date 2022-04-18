@@ -1,6 +1,5 @@
 package redis
 
-
 import (
 	"github.com/JiadeXu/jade/framework/contract"
 	"github.com/JiadeXu/jade/framework/provider/config"

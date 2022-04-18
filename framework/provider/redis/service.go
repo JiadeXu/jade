@@ -10,7 +10,7 @@ import (
 type JadeRedis struct {
 	contract.RedisService
 	container framework.Container
-	clients map[string]*redis.Client
+	clients   map[string]*redis.Client
 
 	lock *sync.RWMutex
 }

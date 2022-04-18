@@ -35,7 +35,7 @@ func WithConfigPath(configPath string) contract.DBOption {
 }
 
 // WithGormConfig 表示自行配置Gorm的配置信息
-func WithGormConfig (gormConfig *gorm.Config) contract.DBOption {
+func WithGormConfig(gormConfig *gorm.Config) contract.DBOption {
 	return func(container framework.Container, config *contract.DBConfig) error {
 		if gormConfig.Logger != nil {
 			gormConfig.Logger = config.Logger

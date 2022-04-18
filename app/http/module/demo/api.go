@@ -9,6 +9,18 @@ type DemoApi struct {
 	service *Service
 }
 
+func Register(r *gin.Engine) error {
+	api := NewDemoApi()
+	r.Bind(&demoService.DemoProvider{})
+
+	r.GET("/demo/demo", api.Demo)
+	r.GET("/demo/demo2", api.Demo2)
+	r.POST("/demo/demo_post", api.DemoPost)
+	r.GET("/demo/orm", api.DemoOrm)
+	r.GET("/demo/cache/redis", api.DemoRedis)
+	return nil
+}
+
 func NewDemoApi() *DemoApi {
 	service := NewService()
 	return &DemoApi{service: service}

@@ -2,7 +2,6 @@ package app
 
 import (
 	"errors"
-	"flag"
 	"github.com/JiadeXu/jade/framework"
 	"github.com/JiadeXu/jade/framework/contract"
 	"github.com/JiadeXu/jade/framework/util"
@@ -13,8 +12,8 @@ import (
 var baseFolder = ""
 
 func init() {
-	flag.StringVar(&baseFolder, "base_folder", "", "base_folder参数, 默认为当前路径")
-	flag.Parse()
+	//flag.StringVar(&baseFolder, "base_folder", "", "base_folder参数, 默认为当前路径")
+	//flag.Parse()
 }
 
 type JadeApp struct {
