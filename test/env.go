@@ -3,7 +3,6 @@ package test
 import (
 	"github.com/JiadeXu/jade/framework"
 	"github.com/JiadeXu/jade/framework/provider/app"
-	"github.com/JiadeXu/jade/framework/provider/config"
 	"github.com/JiadeXu/jade/framework/provider/env"
 )
 
@@ -18,6 +17,5 @@ func InitBaseContainer() framework.Container {
 	container.Bind(&app.JadeAppProvider{BaseFolder: BasePath})
 	// 后续初始化需要绑定的服务提供者...
 	container.Bind(&env.JadeTestingEnvProvider{})
-	container.Bind(&config.JadeConfigProvider{})
 	return container
 }

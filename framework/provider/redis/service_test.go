@@ -1,4 +1,5 @@
-package orm
+package redis
+
 
 import (
 	"github.com/JiadeXu/jade/framework/contract"
@@ -8,7 +9,7 @@ import (
 	"testing"
 )
 
-func TestJadeConfigLoad(t *testing.T) {
+func TestJadeConfig_Load(t *testing.T) {
 	container := tests.InitBaseContainer()
 	container.Bind(&config.JadeConfigProvider{})
 
@@ -32,7 +33,7 @@ func TestJadeConfigLoad(t *testing.T) {
 	Convey("test base config", t, func() {
 		configService := container.MustMake(contract.ConfigKey).(contract.Config)
 		config := &contract.DBConfig{
-			ConnMaxOpen: 100,
+			ConnMaxOpen: 200,
 		}
 		err := configService.Load("database", config)
 		So(err, ShouldBeNil)
