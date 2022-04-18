@@ -8,7 +8,7 @@ import (
 type LocalDistributedProvider struct {
 }
 
-// Register 注册HadeApp方法
+// Register 注册JadeApp方法
 func (h *LocalDistributedProvider) Register(container framework.Container) framework.NewInstance {
 	return NewLocalDistributedService
 }

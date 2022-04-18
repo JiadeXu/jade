@@ -5,7 +5,7 @@ import "github.com/rs/xid"
 type JadeIDService struct {
 }
 
-func NewHadeIDService(params ...interface{}) (interface{}, error) {
+func NewJadeIDService(params ...interface{}) (interface{}, error) {
 	return &JadeIDService{}, nil
 }
 

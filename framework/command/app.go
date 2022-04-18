@@ -179,7 +179,7 @@ var appStartCommand = &cobra.Command{
 
 // 重新启动
 var appRestartCommand = &cobra.Command{
-	Use: "restart",
+	Use:   "restart",
 	Short: "重新启动一个app服务",
 	RunE: func(c *cobra.Command, args []string) error {
 		container := c.GetContainer()
@@ -211,7 +211,7 @@ var appRestartCommand = &cobra.Command{
 				}
 
 				// 确认进程已经关闭
-				for i := 0; i < closeWait * 2; i++ {
+				for i := 0; i < closeWait*2; i++ {
 					if !util.CheckProcessExist(pid) {
 						break
 					}

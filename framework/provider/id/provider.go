@@ -10,7 +10,7 @@ type JadeIDProvider struct {
 
 // Register registe a new function for make a service instance
 func (provider *JadeIDProvider) Register(c framework.Container) framework.NewInstance {
-	return NewHadeIDService
+	return NewJadeIDService
 }
 
 // Boot will called when the service instantiate
