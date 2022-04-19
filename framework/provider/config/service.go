@@ -249,7 +249,8 @@ func (conf *JadeConfig) GetTime(key string) time.Time {
 
 // GetString get string typen
 func (conf *JadeConfig) GetString(key string) string {
-	return cast.ToString(conf.find(key))
+	rs := cast.ToString(conf.find(key))
+	return rs
 }
 
 // GetIntSlice get int slice type

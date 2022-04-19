@@ -1,0 +1,15 @@
+timeout: 3s
+network: tcp
+web-01:
+  host: localhost # ip地址
+  port: 22 # 端口
+  username: xxx # 用户名
+  password: "xxx" # 密码
+
+#host: localhost # ip地址
+#port: 3306 # 端口
+#username: jianfengye # 用户名
+#password: "123456789" # 密码
+#rsa_key: "~/.ssh/id_rsa"
+#timeout: 1000
+#network: tcp
